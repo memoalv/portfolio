@@ -1,22 +1,58 @@
 html, body {
   height: 100%;
+  font-family: -apple-system, Inter, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+a { 
+  color: inherit; 
+  text-decoration: none;
+} 
 
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .dark {
   background-color: #161239;
-}
-
-.white {
-  background-color: #FFF;
+  color: white;
+  fill: white;
 }
 
 .astronaut {
+  margin-top: 100px;
   height: 300px; 
   width: 300px;
+}
+
+.footer {
+  margin-bottom: 60px;
+}
+
+.text { 
+  font-weight: 700;
+  text-align:  center;
+}
+
+.links {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links > a {
+  margin-right: 15px;
+}
+
+@media (min-width: 600px) {
+  .astronaut {
+    margin-top: 200px;
+  }
 }
